@@ -1,0 +1,21 @@
+body {
+    background-color: green;
+}
+  
+.tag {
+    text-align: center;
+}
+  
+.slick-slide img {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
+.slick-prev{
+    left: 0px !important;
+    z-index: 999;
+}
+.slick-next{
+    right: 0px !important;
+    z-index: 999;
+}

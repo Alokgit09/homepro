@@ -1,0 +1,34 @@
+.accordian{
+    text-align: center;
+}
+.App {
+    margin: 100px 0px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 50px;
+}
+.main_haeding {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: darkcyan;
+    color: #fff;
+    padding: 0px 20px;
+    margin: 0px 20px;
+    border-bottom: 2px solid lightgray;
+}
+.main_haeding p {
+    font-size: 25px;
+    font-weight: 800;
+    margin: 0px 15px 0px 0px;
+    cursor: pointer;
+}
+p.answers {
+    text-align: left;
+    margin: 0px 20px;
+    background-color: skyblue;
+    padding: 5px 20px;
+}
