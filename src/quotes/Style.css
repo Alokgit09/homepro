@@ -1,0 +1,23 @@
+.container_1 {
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 50px;
+}
+.quotediv {
+    background-color: darkcyan;
+    color: white;
+    padding: 21px 30px;
+}
+.next button {
+    padding: 7px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: unset;
+    background-color: darkcyan;
+    color: white;
+    border: 2px solid;
+}
+.quotes p {
+    font-size: 17px;
+    font-weight: 400;
+}
