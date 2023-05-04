@@ -4,6 +4,7 @@ import ImageSlider from "./silck/ImageSlider";
 import Accordian from "./Newaccor/Accordian";
 import Quotes from "./quotes/Quote";
 import ShoppingList from "./shopping/Slist";
+import SearchBar from "./Searchbar/Search";
   
 const App = () => {
   return (
@@ -19,6 +20,9 @@ const App = () => {
    </div>
    <div className="container_2">
    < ShoppingList/>
+   </div>
+   <div className="container_3">
+   < SearchBar/>
    </div>
   </>
   )

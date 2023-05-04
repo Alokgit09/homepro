@@ -4,15 +4,32 @@ import "./Slist.css";
 const Slist = () => {
 const [allItems, setallItems] = useState([]);
 const [list, setList] = useState("");
+const [editIndex, setEditIndex] = useState()
 const [toggleBtn, setToggleBtn] = useState(true);
 
+localStorage.setItem('items', JSON.stringify(allItems));
+
 const addList = (e) => {
+  setToggleBtn(true);
     e.preventDefault();
   if(!list){
 
   }else{ 
-    setallItems([...allItems, list]);
+    if(editIndex){
+      let newList = allItems
+      console.log(newList,'newList');
+      newList.splice(editIndex, 1,list)
+      console.log(newList,'newList2');
+      setallItems(newList);
     setList('');
+    setEditIndex();
+
+    }else{
+      setallItems([...allItems, list]);
+    setList('');
+    
+    }
+   
   }
 }
 
@@ -32,12 +49,11 @@ const editList = (id) => {
   const EditsItem = allItems.find((item, index) => {
     return index === id;
   });
-  // console.log(EditsItem);
+  console.log(EditsItem);
+  setEditIndex(id);
+  setList(EditsItem);
   setToggleBtn(false);
- setallItems([
-  ...allItems,
-  EditsItem
- ]);
+
 }
 
 
