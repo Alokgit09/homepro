@@ -5,6 +5,7 @@ import Accordian from "./Newaccor/Accordian";
 import Quotes from "./quotes/Quote";
 import ShoppingList from "./shopping/Slist";
 import SearchBar from "./Searchbar/Search";
+import Player from "./Player/Player";
   
 const App = () => {
   return (
@@ -23,6 +24,9 @@ const App = () => {
    </div>
    <div className="container_3">
    < SearchBar/>
+   </div>
+   <div className="container_4">
+   < Player/>
    </div>
   </>
   )
